@@ -1,51 +1,122 @@
-# UPI_Fraud_Detection
-The UPI Fraud Detection System is a machine learning–based application that identifies fraudulent UPI transactions by analyzing transaction data patterns. Using a trained Random Forest model and a Flask web interface, the system predicts whether a transaction is genuine or fraudulent, helping enhance financial security in digital payment systems.
-🎯 Features
-Machine learning model for fraud prediction
-Real-time transaction analysis
-Web interface for user input and results
-Model persistence using Joblib
-Explainability support using SHAP (optional)
-Lightweight and easy to run locally
-🧠 Machine Learning Model
-Algorithm: Random Forest Classifier (from scikit-learn)
-Trained on historical UPI transaction dataset
-Handles imbalanced data
-Saved model: model.pkl
-Saved feature columns: model_columns.pkl
-🛠️ Tech Stack
-Backend: Flask
-ML Library: scikit-learn
-Model Serialization: Joblib
-Data Handling: pandas
-Explainability (optional): SHAP
-Frontend: HTML, CSS
+# 💳 UPI Fraud Detection System
 
-Project Structure
-upi-fraud-detection/
+## 📌 Project Overview
+
+The **UPI Fraud Detection System** is a Machine Learning-based application developed using **Python**, **Flask**, and **Scikit-learn** to identify fraudulent UPI transactions.
+
+The system is trained using a historical UPI transaction dataset and predicts whether a transaction is **Genuine** or **Fraudulent** using a **Random Forest Classifier**. This project demonstrates practical implementation of machine learning techniques for fraud detection in digital payment systems.
+
+---
+
+## 🎯 Features
+
+- Detects fraudulent UPI transactions using Machine Learning
+- Random Forest Classification algorithm
+- Data preprocessing and feature selection
+- Model training and prediction
+- Trained model saved using Joblib
+- Lightweight Python-based application
+
+---
+
+## 🧠 Machine Learning Model
+
+- **Algorithm:** Random Forest Classifier
+- **Machine Learning Library:** Scikit-learn
+- **Dataset:** Historical UPI Transaction Dataset
+- **Model File:** `model.pkl`
+- **Feature Columns:** `model_columns.pkl`
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- Flask
+- Pandas
+- NumPy
+- Scikit-learn
+- Joblib
+
+---
+
+## 📂 Project Structure
+
+```text
+UPI-Fraud-Detection-System/
 │
 ├── app.py
+├── train_model.py
+├── fraud_dataset.csv
 ├── model.pkl
 ├── model_columns.pkl
-├── templates/
-│   └── index.html
-├── static/
-│   └── style.css
 ├── requirements.txt
 └── README.md
+```
 
-Clone the Repository
-git clone <your-repo-link>
-cd upi-fraud-detection
+---
 
-Create Virtual Environment
-python -m venv venv
-venv\Scripts\activate
-3️⃣ Install Dependencies
+## 🚀 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Piyush80100/UPI-Fraud-Detection-System.git
+```
+
+### 2. Navigate to the Project Folder
+
+```bash
+cd UPI-Fraud-Detection-System
+```
+
+### 3. Install Required Libraries
+
+```bash
 pip install -r requirements.txt
-4️⃣ Run the Application
+```
+
+### 4. Run the Application
+
+```bash
 python app.py
+```
 
-Open in browser:
+---
 
-http://127.0.0.1:5000/
+## 📊 Project Workflow
+
+1. Load the transaction dataset
+2. Preprocess and clean the data
+3. Select important features
+4. Train the Random Forest model
+5. Save the trained model using Joblib
+6. Predict whether a transaction is Genuine or Fraudulent
+
+---
+
+## 📈 Future Improvements
+
+- Improve prediction accuracy using advanced ML algorithms
+- Hyperparameter tuning for better performance
+- Deploy the application on cloud platforms
+- Add REST API support
+- Build a real-time fraud detection dashboard
+
+---
+
+## 🎓 Academic Purpose
+
+This project was developed as part of academic learning to understand the application of **Machine Learning** in fraud detection and digital payment security.
+
+---
+
+## 👨‍💻 Author
+
+**Piyush Jadhav**
+
+B.Tech Computer Engineering
+
+SVKM's NMIMS MPSTME, Shirpur
+
+GitHub: https://github.com/Piyush80100
